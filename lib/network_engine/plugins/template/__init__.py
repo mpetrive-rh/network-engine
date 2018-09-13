@@ -56,7 +56,7 @@ class TemplateBase(object):
             try:
                 value = int(value)
             except Exception:
-                if value is None or len(value) == 0:
+                if value is None:  #or len(value) == 0
                     return None
                 pass
         return value
